@@ -52,7 +52,11 @@ namespace TaskTimer
                 if (minutes1 < 22.5) deciminutes1 = 25;
                 else if (minutes1 < 37.5) deciminutes1 = 50;
                 else if (minutes1 < 52.5) deciminutes1 = 75;
-                else hour1++;
+                else 
+                {
+                    hour1++;
+                    deciminutes1 = 0;
+                }
 
                 string elapsedTime = hour1.ToString() + "." + deciminutes1.ToString();
                 lblTime1.Text = elapsedTime;
@@ -104,7 +108,11 @@ namespace TaskTimer
                 if (minutes2 < 22.5) deciminutes2 = 25;
                 else if (minutes2 < 37.5) deciminutes2 = 50;
                 else if (minutes2 < 52.5) deciminutes2 = 75;
-                else hour2++;
+                else 
+                {
+                    hour2++;
+                    deciminutes2 = 0;
+                }
 
                 string elapsedTime = hour2.ToString() + "." + deciminutes2.ToString();
                 lblTime2.Text = elapsedTime;
@@ -151,7 +159,11 @@ namespace TaskTimer
                 if (minutes3 < 22.5) deciminutes3 = 25;
                 else if (minutes3 < 37.5) deciminutes3 = 50;
                 else if (minutes3 < 52.5) deciminutes3 = 75;
-                else hour3++;
+                else
+                {
+                    hour3++;
+                    deciminutes3 = 0;
+                }
 
                 string elapsedTime = hour3.ToString() + "." + deciminutes3.ToString();
                 lblTime3.Text = elapsedTime;
@@ -198,7 +210,11 @@ namespace TaskTimer
                 if (minutes4 < 22.5) deciminutes4 = 25;
                 else if (minutes4 < 37.5) deciminutes4 = 50;
                 else if (minutes4 < 52.5) deciminutes4 = 75;
-                else hour4++;
+                else
+                {
+                    hour4++;
+                    deciminutes4 = 0;
+                }
 
                 string elapsedTime = hour4.ToString() + "." + deciminutes4.ToString();
                 lblTime4.Text = elapsedTime;
